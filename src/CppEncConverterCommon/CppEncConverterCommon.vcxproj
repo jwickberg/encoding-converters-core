@@ -74,7 +74,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Lib>
-      <OutputFile>$(OutDir)CppEncConverterCommon.lib</OutputFile>
+      <OutputFile>$(SolutionDir)$(Platform)\$(OutDir)\CppEncConverterCommon.lib</OutputFile>
       <TargetMachine>MachineX86</TargetMachine>
     </Lib>
     <PostBuildEvent>
@@ -92,7 +92,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Lib>
-      <OutputFile>$(OutDir)CppEncConverterCommon.lib</OutputFile>
+      <OutputFile>$(SolutionDir)$(Platform)\$(OutDir)\CppEncConverterCommon.lib</OutputFile>
       <TargetMachine>MachineX86</TargetMachine>
     </Lib>
     <PostBuildEvent>

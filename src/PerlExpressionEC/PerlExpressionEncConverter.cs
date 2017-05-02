@@ -93,7 +93,7 @@ namespace SilEncConverters40
                         "perl";
 #else
 #if DEBUG
-                        @"\temp\perl\bin\perl.exe";
+                        @"C:\Perl64\bin\perl.exe";
 #else
                         "perl.exe";
 #endif

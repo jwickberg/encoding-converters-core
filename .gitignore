@@ -15,8 +15,6 @@
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
-x64/
-x86/
 bld/
 [Bb]in/
 # there's a 'bin' sub-folder in DistFiles that we need to include
@@ -67,7 +65,6 @@ artifacts/
 *.pgd
 *.rsp
 *.sbr
-*.tlb
 *.tli
 *.tlh
 *.tmp

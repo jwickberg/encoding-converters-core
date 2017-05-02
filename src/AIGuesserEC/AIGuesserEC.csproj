@@ -156,7 +156,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\redist\EC\Plugins\AI 4.0.0.0 Plugin Details.xml">
+    <Content Include="..\..\redist\common\EC\Plugins\AI 4.0.0.0 Plugin Details.xml">
       <Link>AI 4.0.0.0 Plugin Details.xml</Link>
       <SubType>Designer</SubType>
     </Content>

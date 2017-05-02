@@ -510,7 +510,7 @@ namespace TestEncCnvtrs
 		{
 			var dir = GetBaseDir();
 			if (dir != null)
-				dir = Path.Combine(Path.Combine(dir, "redist"), "MapsTables");
+				dir = Path.Combine(dir, "MapsTables");
 			return dir;
 		}
 
@@ -525,8 +525,7 @@ namespace TestEncCnvtrs
 				filepath = "/" + filepath;
 #endif
 			var configDir = Path.GetDirectoryName(filepath);
-			var outDir = Path.GetDirectoryName(configDir);
-			return Path.GetDirectoryName(outDir);
+			return configDir;
 		}
 
 		[Test]

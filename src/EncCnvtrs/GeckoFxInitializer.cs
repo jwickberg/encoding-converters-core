@@ -19,6 +19,8 @@ namespace SilEncConverters40
 #endif
         private static string className = typeof(GeckoFxInitializer).Name;
 
+#if LoadGeckoLibs
+
         public static bool SetUpXulRunner()
         {
             Util.DebugWriteLine(className, "BEGIN");
@@ -70,6 +72,7 @@ namespace SilEncConverters40
             xulRunnerPath = Path.Combine(path, Path.Combine("lib", "xulrunner"));
             return (Directory.Exists(xulRunnerPath));
         }
+#endif
 
         public static string DirectoryOfTheApplicationExecutable
         {
@@ -118,8 +121,8 @@ namespace SilEncConverters40
                                             DirectoryOfTheApplicationExecutable);
                 labelInstructions.LinkClicked += (sender, args) =>
                 {
-                    if (args.Link.LinkData != null) ;
-                    Process.Start(args.Link.LinkData as string);
+                    if (args.Link.LinkData != null)
+                        Process.Start(args.Link.LinkData as string);
                 };
                 return labelInstructions;
 #endif
